@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MouseClick : MonoBehaviour
+public class DeactivateChildren2 : MonoBehaviour
 {
     [Header("Click Event")]
     public UnityEvent TrueClickEvent;
@@ -19,28 +19,36 @@ public class MouseClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnMouseDown()
     {
+
+
+
+        GameObject[] children = GameObject.FindGameObjectsWithTag("Tanah");
+
+        // deactivate all child objects
+        foreach (GameObject child in children)
+        {
+            child.SetActive(false);
+        }
+
+
+
         ClickStatus = !ClickStatus;
         if (ClickStatus)
         {
             TrueClickEvent?.Invoke();
         }
-        else 
+        else
         {
             FalseClickEvent?.Invoke();
         }
 
 
-
-
-
     }
-
-
 
 
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Orbit
   - ClickableObject
+  - Tanah
   layers:
   - Default
   - TransparentFX
