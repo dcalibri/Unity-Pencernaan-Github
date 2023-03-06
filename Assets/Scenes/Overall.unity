@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 115874160}
   - component: {fileID: 115874161}
   m_Layer: 0
-  m_Name: Deactivate with Keyboard
+  m_Name: Deactivate w/Exit Keypress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db85b05a916586f4ebc4af837a704465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagToDeactivate: Tanah
+  tagToDeactivate: Vcam Organ
   deactivationKey: 27
 --- !u!1 &132459441
 GameObject:
@@ -327,7 +327,6 @@ GameObject:
   - component: {fileID: 132459444}
   - component: {fileID: 132459443}
   - component: {fileID: 132459442}
-  - component: {fileID: 132459447}
   m_Layer: 0
   m_Name: blue cube (2)
   m_TagString: ClickableObject
@@ -428,18 +427,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &132459447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132459441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9ec0852fc3a05b47acf9c36b465171e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &151257611 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7847162232691855171, guid: 77baf0c519d26a648b5128c81e7e9268, type: 3}
@@ -509,20 +496,6 @@ MonoBehaviour:
   simpleTooltipStyle: {fileID: 11400000, guid: f1d1c287ded68be43934c42c517f05d2, type: 2}
   infoLeft: Saya Kerongkongan
   infoRight: 
---- !u!64 &176093733
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176093726}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8688377462476701326, guid: 77baf0c519d26a648b5128c81e7e9268, type: 3}
 --- !u!114 &176093737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,6 +526,19 @@ MonoBehaviour:
   FalseClickEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &176093738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176093726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0004348787, y: 0.00101184, z: 0.00364428}
+  m_Center: {x: -0.000030180476, y: 0.00053602306, z: 0.001938671}
 --- !u!1 &231423846 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1301181587262470806, guid: 77baf0c519d26a648b5128c81e7e9268, type: 3}
@@ -727,7 +713,7 @@ GameObject:
   - component: {fileID: 463330308}
   m_Layer: 0
   m_Name: Vcam 6. Hati
-  m_TagString: Tanah
+  m_TagString: Vcam Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -777,7 +763,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 36, y: 24}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1020,7 +1006,7 @@ GameObject:
   - component: {fileID: 752950943}
   m_Layer: 0
   m_Name: Vcam 7. Usus Besar
-  m_TagString: Tanah
+  m_TagString: Vcam Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1070,7 +1056,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 36, y: 24}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1662,7 +1648,7 @@ GameObject:
   - component: {fileID: 996247914}
   - component: {fileID: 996247913}
   m_Layer: 0
-  m_Name: Scroll Deactivate
+  m_Name: Deactivate w/ScrollDown Mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1680,7 +1666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d409c2f332b4f40a36dbbe9b9b89d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagToDeactivate: Tanah
+  tagToDeactivate: Vcam Organ
 --- !u!4 &996247914
 Transform:
   m_ObjectHideFlags: 0
@@ -1801,7 +1787,7 @@ GameObject:
   - component: {fileID: 1137252063}
   m_Layer: 0
   m_Name: Vcam 4. material 003
-  m_TagString: Tanah
+  m_TagString: Vcam Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1851,7 +1837,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 36, y: 24}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1873,7 +1859,7 @@ GameObject:
   - component: {fileID: 1174209106}
   m_Layer: 0
   m_Name: Vcam 2. Kerongkongan
-  m_TagString: Tanah
+  m_TagString: Vcam Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1907,7 +1893,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 36, y: 24}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2026,7 +2012,7 @@ GameObject:
   - component: {fileID: 1219270699}
   m_Layer: 0
   m_Name: Vcam 8. Usus Halus
-  m_TagString: Tanah
+  m_TagString: Vcam Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2076,7 +2062,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 36, y: 24}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2172,7 +2158,7 @@ GameObject:
   - component: {fileID: 1477325161}
   m_Layer: 0
   m_Name: Vcam 3. Lambung
-  m_TagString: Tanah
+  m_TagString: Vcam Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2222,7 +2208,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 36, y: 24}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2243,7 +2229,7 @@ GameObject:
   - component: {fileID: 1660010212}
   m_Layer: 0
   m_Name: Vcam 5. material 007
-  m_TagString: Tanah
+  m_TagString: Vcam Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2293,7 +2279,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 36, y: 24}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2533,7 +2519,7 @@ GameObject:
   - component: {fileID: 1998089948}
   m_Layer: 0
   m_Name: Vcam 1. Mulut
-  m_TagString: Tanah
+  m_TagString: Vcam Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2567,7 +2553,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 36, y: 24}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
