@@ -306,8 +306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccbe2b39ae86f9c48bf821ee1e34d9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetScene: 
-  Delay: 0
+  TargetScene: Overall
+  Delay: 7
 --- !u!4 &1224468333
 Transform:
   m_ObjectHideFlags: 0
