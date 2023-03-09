@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Splash Screen.unity
+    path: Assets/Scenes/SS Telkom.unity
     guid: 6b899f6ecf50214459c21070e4e6984a
   - enabled: 1
     path: Assets/Scenes/Overall.unity
